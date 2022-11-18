@@ -1,0 +1,9 @@
+package br.com.fiap.tech.dao;
+
+import br.com.fin.tech.bean.Usuario;
+
+public class UsuarioDAO {
+	boolean validarUsuario(Usuario usuario);
+
+	
+}

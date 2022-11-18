@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\samuel.almeida\java\FinTechServelts\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1242456188.index
+2106782483.index
+4042029656.index
+3474533200.index
+2214533620.index
+2399103412.index
+3330206926.index

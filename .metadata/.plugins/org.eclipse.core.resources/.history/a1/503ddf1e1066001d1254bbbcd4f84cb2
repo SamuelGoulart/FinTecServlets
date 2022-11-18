@@ -1,0 +1,17 @@
+package br.com.fin.tech.dao;
+
+import java.util.List;
+
+import br.com.fin.tech.bean.Receita;
+
+public interface ReceitaDAO {
+    void insert(Receita receita);
+    
+    List<Receita> getAll(int cdUsuario);
+	
+    Receita getByCd(int cdReceita);
+    
+    void update(Receita receita);
+    
+    void delete(int cdReceita);
+}

@@ -1,0 +1,13 @@
+package br.com.fiap.tech.dao;
+
+import br.com.fin.tech.bean.Usuario;
+import br.com.fin.tech.exception.DBException;
+
+public interface UsuarioDAO {
+	boolean validarUsuario(Usuario usuario);
+	
+	void cadastrarUsuario(Usuario usuario) throws DBException;
+
+
+	
+}

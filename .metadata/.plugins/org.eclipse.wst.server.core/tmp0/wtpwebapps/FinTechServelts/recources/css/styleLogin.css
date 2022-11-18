@@ -1,0 +1,151 @@
+@charset "ISO-8859-1";
+
+h2 {
+  color: var(--color-azul);
+  font-weight: bold;
+}
+
+#titulo-bem-vindo {
+  font-size: 72px;
+  font-weight: bold;
+
+  color: var(--color-azul);
+}
+
+#div-form-login {
+  width: 40vw;
+
+  display: flex;
+  align-items: center;
+}
+
+#div-lembre-de-min {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 36%;
+}
+
+#lembre-de-mim {
+  color: var(--color-cinza);
+  font-weight: bold;
+}
+
+#esqueci-minha-senha {
+  text-decoration: none;
+  color: var(--color-azul);
+}
+
+#div-form-login > div {
+  width: 500px;
+  height: 580px;
+}
+
+#div-form-btn {
+  display: grid;
+  justify-content: end;
+
+  margin-top: 20px;
+}
+
+#btn-form-login {
+  width: 205px;
+  height: 45px;
+
+  border-radius: 10px;
+
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.imagem {
+  width: 60vw;
+  height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.imagem > div {
+  width: 530px;
+  height: 550px;
+}
+
+#imagem-autenticacao {
+  width: 351px;
+  height: 410px;
+}
+
+#imagem-circulo {
+  width: 530px;
+  height: 550px;
+
+  position: absolute;
+  z-index: -1;
+}
+
+#divisor {
+  width: 100%;
+
+  margin: 30px auto;
+
+  text-align: center;
+
+  background-image: linear-gradient(
+    180deg,
+    transparent 10px,
+    #777a7f 0,
+    #777a7f 12px,
+    transparent 0
+  );
+}
+
+#divisor > span {
+  padding: 0 10px;
+
+  background-color: white;
+}
+
+#fazer-login,
+#cadastra-se  {
+  color: var(--color-azul);
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+#redes-socias {
+  padding-bottom: 30px;
+}
+
+#redes-socias > div {
+  width: 100%;
+  height: 50px;
+
+  border-radius: 10px;
+  border: 2px solid var(--color-cinza);
+
+  margin-top: 30px;
+  padding: 0px 5px 0px 30px;
+
+  display: grid;
+  grid-template-columns: 150px 205px;
+  align-items: center;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1250px) {
+  #imagem-circulo,
+  #imagem-autenticacao {
+    display: none;
+  }
+
+  .row {
+    display: block;
+  }
+
+  #div-form-login {
+    width: 100vw;
+
+    justify-content: center;
+  }
+}

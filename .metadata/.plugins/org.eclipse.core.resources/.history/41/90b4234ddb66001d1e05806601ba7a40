@@ -1,0 +1,16 @@
+package br.com.fin.tech.util;
+
+public class ReverseString {
+	public static String reverse(String string) throws Exception {
+		String nstr = "";
+		char ch;
+
+		for (int i = 0; i < string.length(); i++) {
+			ch = string.charAt(i); // extrai cada caractere
+			nstr = ch + nstr; // adiciona cada caractere na frente da string existente
+		}
+
+		return nstr;
+	}
+
+}

@@ -1,0 +1,366 @@
+@charset "ISO-8859-1";
+
+body {
+  background-color: var(--color-cinza-claro) !important;
+}
+
+nav {
+  width: 80px;
+  min-height: 100vh;
+  height: 100%;
+
+  background: linear-gradient(180deg, #7b83eb 0%, #757fff 100%);
+  border-radius: 0px 25px 0px 0px;
+
+  padding: 15px 15px 0px 25px;
+}
+
+nav > div {
+  display: block;
+  cursor: pointer;
+  margin-top: 35px;
+}
+
+#header {
+  display: flex;
+  justify-content: end;
+
+  padding: 10px 20px 10px 0px;
+  height: 50px;
+}
+
+header > img {
+  width: 40px;
+  height: 40px;
+
+  cursor: pointer;
+}
+
+#container {
+  display: grid;
+  grid-template-columns: 10% 90%;
+}
+
+#container > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+}
+
+#div-saldo-mes {
+  max-width: 520px;
+  width: 95vw;
+  height: 300px;
+
+  display: grid;
+
+  background-color: white;
+  border-radius: 10px;
+
+  padding: 35px 0px 35px 0px;
+}
+
+#div-info {
+  display: grid;
+  grid-template-rows: 40px 20px 50px 20px;
+}
+
+#div-icone-olho {
+  display: flex;
+  justify-content: center;
+
+  cursor: pointer;
+}
+
+#div-despesas-orcamento {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 0px 40px 0px 80px;
+}
+
+#div-despesas-orcamento > div {
+  display: grid;
+  grid-template-rows: 20px;
+}
+
+#saldo-mes {
+  font-weight: 700;
+  font-size: 2.2rem;
+
+  text-align: center;
+}
+
+#barra-despesas-orcamento {
+  background-color: var(--color-vermelho);
+  width: 80%;
+  height: 10px;
+}
+
+.div-progress-bar {
+  display: flex;
+  justify-content: center;
+}
+
+.div-progress-bar > div {
+  max-width: 480px;
+  width: 90%;
+  height: 10px;
+  background-color: var(--color-verde);
+  border-radius: 8px;
+  display: flex;
+}
+
+.div-progress-bar > div::before {
+  content: "";
+  width: calc(var(--progress) * 1%);
+  background-color: var(--color-vermelho);
+  border-radius: 8px;
+}
+
+#div-despesas-por-categoria {
+  max-width: 520px;
+  width: 95vw;
+  height: 300px;
+
+  background-color: white;
+
+  border-radius: 10px;
+
+  padding: 20px 0px 20px 20px;
+}
+
+#div-despesas-por-categoria > div {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  padding-left: 20px;
+}
+
+#div-despesas-por-categoria > span {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+#div-grafico,
+#div-lista-grafico {
+  margin-top: 40px;
+}
+
+#div-transacoes-recentes,
+#div-planejamento-do-mes {
+  max-width: 520px;
+  width: 95vw;
+  height: 560px;
+
+  margin: 30px 0px 30px 0px;
+  border-radius: 10px;
+
+  background-color: white;
+
+  padding: 15px;
+}
+
+#div-transacoes-recentes > div {
+  display: grid;
+  justify-content: center;
+}
+
+#div-transacoes-recentes > span,
+#div-planejamento-do-mes > span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.transacoes {
+  max-width: 400px;
+  width: 80vw;
+  height: 70px;
+
+  border-radius: 10px;
+  background-color: white;
+
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+  display: grid;
+  grid-template-columns: 10% 70% 20%;
+  align-items: center;
+
+  padding: 0px 10px 0px 10px;
+
+  margin-top: 15px;
+
+  cursor: pointer;
+
+  font-size: 0.8rem;
+}
+
+.div-info-transacoes {
+  display: flex;
+  flex-direction: column;
+}
+
+.descricao_transacoes {
+  font-weight: bold;
+}
+
+#btn-adicionar-transacao {
+  margin-top: 30px;
+}
+
+.dinheiro-transacao {
+  font-weight: bold;
+}
+
+.imagens-planejamento-do-mes {
+  width: 50px;
+  height: 40px;
+
+  display: grid;
+  justify-items: center;
+  align-items: center;
+
+  background-color: #ffeada;
+  border-radius: 5px;
+}
+
+.infos-planejamento-do-mes {
+  display: grid;
+  grid-template-columns: 10% 90%;
+
+  margin-top: 20px;
+}
+
+.div-infos-gastos {
+  display: flex;
+  justify-content: space-between;
+
+  padding: 0px 20px 0px 20px;
+
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+#progress-carrinho,
+#progress-transporte,
+#progress-luz,
+#progress-strimmer {
+  background-color: #f1f1f1;
+}
+
+#progress-carrinho::before {
+  background-color: #fcae73;
+}
+
+#progress-transporte::before {
+  background-color: #209d43;
+}
+
+#progress-luz::before {
+  background-color: #ffff00;
+}
+
+#progress-strimmer::before {
+  background-color: #0330a6;
+}
+
+.qtd-restou {
+  display: flex;
+  justify-content: end;
+
+  padding-right: 17px;
+
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+#div-definir-novo-orcamento {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 180px;
+}
+
+#div-trem {
+  background-color: #ddf9e4;
+}
+
+#div-lampada {
+  background-color: #ffffce;
+}
+
+#div-cinema {
+  background-color: rgba(3, 48, 166, 0.4);
+}
+
+#div-select {
+  margin-top: 20px;
+}
+
+#select-despesa {
+  width: 100%;
+  margin-bottom: 30px;
+  margin-top: 5px;
+}
+
+.editar {
+  width: 40px;
+}
+
+.lixeira {
+  width: 25px;
+  cursor: pointer;
+}
+
+.lixeira:hover {
+  width: 35px;
+  transition-duration: 500ms;
+}
+
+.editar:hover {
+  width: 50px;
+  transition-duration: 500ms;
+}
+
+@media screen and (max-width: 1250px) {
+  #div-saldo-mes,
+  #div-despesas-por-categoria,
+  #div-transacoes-recentes,
+  #div-planejamento-do-mes {
+    max-width: 90vw;
+    margin-top: 30px;
+  }
+
+  #container {
+    grid-template-columns: none;
+  }
+
+  #container > div {
+    justify-content: center;
+    grid-template-columns: none;
+  }
+
+  nav {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  body {
+    padding: 0px 15px 0px 10px;
+  }
+
+  #div-despesas-por-categoria {
+    margin-top: 30px;
+  }
+
+  #div-planejamento-do-mes {
+    margin: 0px 0px 30px 0px;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #container > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

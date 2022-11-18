@@ -1,0 +1,33 @@
+const resultadoLogin = document.querySelector('#resultadoLogin').value
+
+console.log(resultadoLogin);
+
+if (!resultadoLogin) {
+	Swal.fire({
+		icon: 'error',
+		title: 'Oops...',
+		text: 'Something went wrong!',
+		footer: '<a href="">Why do I have this issue?</a>'
+	})
+}
+
+
+const abrirContainerDeCadastrarUsuario = () => {
+	document.querySelector('#container-login').classList.add('desativar');
+	document.querySelector('#container-login').classList.remove('ativar');
+
+	document.querySelector('#container-cadastro-usuario').classList.remove('desativar');
+	document.querySelector('#container-cadastro-usuario').classList.add('ativar');
+}
+
+const abrirContainerDeFazerLogin = () => {
+	document.querySelector('#container-cadastro-usuario').classList.remove('ativar');
+	document.querySelector('#container-cadastro-usuario').classList.add('desativar');
+	document.querySelector('#container-login').classList.add('ativar');
+}
+
+document.querySelector('#cadastra-se')
+	.addEventListener('click', () => { abrirContainerDeCadastrarUsuario() });
+
+document.querySelector('#fazer-login')
+	.addEventListener('click', () => { abrirContainerDeFazerLogin() });

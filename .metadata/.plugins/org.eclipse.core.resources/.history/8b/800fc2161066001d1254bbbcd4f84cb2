@@ -1,0 +1,7 @@
+package br.com.fin.tech.dao;
+
+import br.com.fin.tech.bean.Receita;
+
+public interface ReceitaDao {
+     void cadastrarReceita(Receita receita);
+}

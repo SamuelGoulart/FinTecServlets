@@ -1,0 +1,39 @@
+@charset "ISO-8859-1";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-azul: #5059c9;
+  --color-cinza: #777a7f;
+  --color-cinza-claro: #e5e5e5;
+  --color-cinza-claro-1: #f1f1f1;
+  --color-verde: rgba(0, 128, 0, 0.6);
+  --color-vermelho: #f46040;
+}
+
+
+label {
+  color: var(--color-cinza);
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0rem;
+}
+
+.text-align-center {
+  text-align: center;
+}
+
+.desativar {
+  display: none;
+}
+
+.ativar {
+    display: block;
+}
+  

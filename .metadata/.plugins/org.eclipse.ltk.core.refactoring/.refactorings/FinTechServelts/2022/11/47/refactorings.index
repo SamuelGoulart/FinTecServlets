@@ -1,0 +1,28 @@
+1668476021369	Move 'dashboard.jsp' to 'webapp'
+1668476449421	Rename resource 'style-dashboard..css'
+1668476988125	Delete element
+1668476998986	Delete elements
+1668477016635	Rename package 'br.com.finTech.store.bean'
+1668477433103	Rename package 'br.com.fiap.tech.dao'
+1668477446021	Rename package 'br.com.fiap.store.dao.impl'
+1668525383334	Delete element
+1668525389512	Delete element
+1668525824414	Delete element
+1668533312089	Rename resource 'login.jsp'
+1668539255983	Move '404.jsp' to 'webapp'
+1668540496262	Rename resource 'styleGlobal.css'
+1668540509901	Rename resource 'styleGlobal.css.css'
+1668540544675	Delete element
+1668540553254	Rename resource 'style-login.css'
+1668540574136	Rename resource 'stylelogin.css'
+1668541244570	Delete element
+1668541345617	Delete element
+1668541457552	Copy file
+1668541468480	Delete element
+1668541474537	Rename resource 'styleLogin2.css'
+1668541493366	Rename resource 'style-dashboard.css'
+1668650870618	Rename type 'ReceitaServelt'
+1668651550856	Rename type 'ReceitaServelet'
+1668729572269	Rename type 'ReceitaServlet'
+1668729648389	Extract method 'cadastrarReceita'
+1668732759651	Delete element

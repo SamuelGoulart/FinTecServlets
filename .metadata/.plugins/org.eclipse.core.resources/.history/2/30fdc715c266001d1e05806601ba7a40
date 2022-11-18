@@ -1,0 +1,14 @@
+const msgCadastroReceita = document.querySelector('#msgCadastroReceita').value
+
+if (msgCadastroReceita != '') {
+	msgCadastroReceita = '';
+
+	Swal.fire({
+		position: 'top-end',
+		icon: 'success',
+		title: msgCadastroReceita,
+		showConfirmButton: false,
+		timer: 1500
+	})
+	
+}

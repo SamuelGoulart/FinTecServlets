@@ -1,0 +1,64 @@
+package br.com.fin.tech.bean;
+
+import java.util.Calendar;
+
+public class Receita {
+	private int cdReceita;
+	private int cdUsuario;
+	private Calendar data;
+	private float valor;
+	private String descricao;
+
+	public Receita() {
+		super();
+	}
+	
+	public Receita(int cdReceita, int cdUsuario, Calendar data, float valor, String descricao) {
+		super();
+		this.cdUsuario= cdUsuario;
+		this.data = data;
+		this.valor = valor;
+		this.descricao = descricao;
+	}
+	
+	public int getCdReceita() {
+		return cdReceita;
+	}
+
+	public void setCdReceita(int cdReceita) {
+		this.cdReceita = cdReceita;
+	}
+
+	public int getCdUsuario() {
+		return cdUsuario;
+	}
+
+	public void setCdUsuario(int cdUsuario) {
+		this.cdUsuario = cdUsuario;
+	}
+
+	public Calendar getData() {
+		return data;
+	}
+
+	public void setData(Calendar data) {
+		this.data = data;
+	}
+
+	public float getValor() {
+		return valor;
+	}
+
+	public void setValor(float valor) {
+		this.valor = valor;
+	}
+
+	public String getDescricao() {
+		return descricao;
+	}
+
+	public void setDescricao(String descricao) {
+		this.descricao = descricao;
+	}
+
+}
